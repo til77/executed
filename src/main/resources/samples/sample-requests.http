@@ -1,0 +1,53 @@
+# Welcome to Executed — Interactive .http Request Runner & Editor
+# Click the ▶ button in the gutter to execute a request, or ✎ to open the visual Request Editor!
+
+@baseUrl = https://httpbin.org
+@apiToken = demo-secret-token-2026
+@defaultAuthor = Hugo Habicht
+
+### Get Request with Query Parameters & Custom Headers
+GET {{baseUrl}}/get?environment=production&author={{defaultAuthor}}&requestId={{$uuid}}
+Accept: application/json
+X-Client-Name: Executed-JavaFX
+X-Request-Timestamp: {{$isoTimestamp}}
+
+### Post JSON Payload with Bearer Authentication
+POST {{baseUrl}}/post
+Authorization: Bearer {{apiToken}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "application": "Executed",
+  "feature": "IntelliJ .http compatibility",
+  "supportsInlineImages": true,
+  "supportsInlinePdf": true,
+  "timestamp": "{{$timestamp}}"
+}
+
+### Basic Authentication Check
+GET {{baseUrl}}/basic-auth/admin/s3cret
+Authorization: Basic admin s3cret
+Accept: application/json
+
+### Inspect Redirect Handling (Toggle @no-redirect via Gutter Edit)
+# @no-redirect
+GET {{baseUrl}}/redirect-to?url=https%3A%2F%2Fhttpbin.org%2Fget&status_code=302
+Accept: application/json
+
+### Fetch Inline PNG Image
+GET {{baseUrl}}/image/png
+Accept: image/png
+
+### Fetch Inline JPEG Image
+GET {{baseUrl}}/image/jpeg
+Accept: image/jpeg
+
+### Download Sample PDF Document (Displayed Inline)
+GET https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf
+Accept: application/pdf
+
+### Download Binary Bytes (Automatically Saved to ./output Folder)
+GET {{baseUrl}}/bytes/512
+Accept: application/octet-stream
+ 

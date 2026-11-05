@@ -1,0 +1,568 @@
+/* Executed Modern Dark IDE Theme */
+.root {
+    -fx-base: #181a24;
+    -fx-background: #14161f;
+    -fx-control-inner-background: #1c1f2b;
+    -fx-control-inner-background-alt: #222634;
+    -fx-accent: #3b82f6;
+    -fx-focus-color: #3b82f6;
+    -fx-faint-focus-color: rgba(59, 130, 246, 0.18);
+    -fx-text-background-color: #e2e8f0;
+    -fx-text-inner-color: #e2e8f0;
+    -fx-font-family: "Inter", "Segoe UI", "Ubuntu", "Cantarell", sans-serif;
+    -fx-font-size: 13px;
+}
+
+.top-toolbar {
+    -fx-background-color: linear-gradient(to bottom, #1e2230, #181b26);
+    -fx-border-color: #2a2f42;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 8 14 8 14;
+}
+
+.app-menu-bar {
+    -fx-background-color: linear-gradient(to bottom, #1e2230, #181b26);
+    -fx-border-color: #2a2f42;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 2 8 2 8;
+}
+
+.app-menu-bar .menu-button {
+    -fx-background-radius: 4;
+    -fx-padding: 4 10 4 10;
+}
+
+.app-menu-bar .menu-button:hover,
+.app-menu-bar .menu-button:focused,
+.app-menu-bar .menu-button:showing {
+    -fx-background-color: #262b3d;
+}
+
+.context-menu {
+    -fx-background-color: #1c1f2b;
+    -fx-border-color: #2c3246;
+    -fx-border-width: 1;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-padding: 4;
+}
+
+.menu-item {
+    -fx-background-radius: 4;
+    -fx-padding: 6 14 6 14;
+}
+
+.menu-item:focused,
+.menu-item:hover {
+    -fx-background-color: #2563eb;
+}
+
+.app-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f8fafc;
+}
+
+.app-subtitle {
+    -fx-font-size: 11px;
+    -fx-text-fill: #94a3b8;
+}
+
+.action-button {
+    -fx-background-color: #262b3d;
+    -fx-text-fill: #e2e8f0;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-color: #363d54;
+    -fx-padding: 6 12 6 12;
+    -fx-cursor: hand;
+    -fx-font-weight: 600;
+}
+
+.action-button:hover {
+    -fx-background-color: #31384f;
+    -fx-border-color: #4b5575;
+}
+
+.primary-button {
+    -fx-background-color: linear-gradient(to bottom right, #2563eb, #1d4ed8);
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-color: #3b82f6;
+    -fx-padding: 6 14 6 14;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+
+.primary-button:hover {
+    -fx-background-color: linear-gradient(to bottom right, #3b82f6, #2563eb);
+}
+
+.run-all-button {
+    -fx-background-color: linear-gradient(to bottom right, #10b981, #059669);
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-color: #34d399;
+    -fx-padding: 6 14 6 14;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+
+.run-all-button:hover {
+    -fx-background-color: linear-gradient(to bottom right, #34d399, #10b981);
+}
+
+.load-test-button {
+    -fx-background-color: linear-gradient(to bottom right, #d97706, #b45309);
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-color: #fbbf24;
+    -fx-padding: 6 12 6 12;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+
+.load-test-button:hover {
+    -fx-background-color: linear-gradient(to bottom right, #f59e0b, #d97706);
+}
+
+/* RichTextFX CodeArea styling */
+.styled-text-area {
+    -fx-background-color: #161822;
+    -fx-font-family: "JetBrains Mono", "Fira Code", "Consolas", "DejaVu Sans Mono", monospace;
+    -fx-font-size: 13.5px;
+}
+
+.styled-text-area .text,
+.styled-text-area .text.http-default,
+.http-default {
+    -fx-fill: #e2e8f0;
+}
+
+.styled-text-area .caret {
+    -fx-stroke: #38bdf8;
+    -fx-stroke-width: 2px;
+}
+
+.styled-text-area .selection {
+    -fx-fill: #264f78;
+}
+
+/* Syntax Highlighting for .http and Output (specific over .styled-text-area .text) */
+.styled-text-area .text.http-separator,
+.http-separator {
+    -fx-fill: #f59e0b;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.http-separator-title,
+.http-separator-title {
+    -fx-fill: #fbbf24;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.http-comment,
+.http-comment {
+    -fx-fill: #64748b;
+    -fx-font-style: italic;
+}
+
+.styled-text-area .text.http-directive,
+.http-directive {
+    -fx-fill: #a855f7;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.http-directive-val,
+.http-directive-val {
+    -fx-fill: #c084fc;
+}
+
+.styled-text-area .text.http-variable-def,
+.http-variable-def {
+    -fx-fill: #38bdf8;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.http-variable-val,
+.http-variable-val {
+    -fx-fill: #bae6fd;
+}
+
+.styled-text-area .text.http-variable-ref,
+.http-variable-ref {
+    -fx-fill: #f472b6;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.http-dynamic-var-ref,
+.http-dynamic-var-ref {
+    -fx-fill: #fb923c;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.http-operator,
+.http-operator {
+    -fx-fill: #94a3b8;
+}
+
+.styled-text-area .text.http-method-get,
+.http-method-get {
+    -fx-fill: #34d399;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.http-method-post,
+.http-method-post {
+    -fx-fill: #60a5fa;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.http-method-put,
+.http-method-put {
+    -fx-fill: #fbbf24;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.http-method-delete,
+.http-method-delete {
+    -fx-fill: #f87171;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.http-method-patch,
+.http-method-patch {
+    -fx-fill: #2dd4bf;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.http-method-other,
+.http-method-other {
+    -fx-fill: #c084fc;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.http-url,
+.http-url {
+    -fx-fill: #93c5fd;
+}
+
+.styled-text-area .text.http-query-sep,
+.http-query-sep {
+    -fx-fill: #64748b;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.http-query-key,
+.http-query-key {
+    -fx-fill: #fcd34d;
+}
+
+.styled-text-area .text.http-query-val,
+.http-query-val {
+    -fx-fill: #a5f3fc;
+}
+
+.styled-text-area .text.http-version,
+.http-version {
+    -fx-fill: #94a3b8;
+    -fx-font-style: italic;
+}
+
+.styled-text-area .text.http-header-key,
+.http-header-key {
+    -fx-fill: #cbd5e1;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.http-header-val,
+.http-header-val {
+    -fx-fill: #94a3b8;
+}
+
+.styled-text-area .text.http-script-marker,
+.http-script-marker {
+    -fx-fill: #f59e0b;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.http-script-keyword,
+.http-script-keyword {
+    -fx-fill: #c084fc;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.http-file-path,
+.http-file-path {
+    -fx-fill: #a7f3d0;
+    -fx-underline: true;
+}
+
+.styled-text-area .text.xml-tag,
+.xml-tag {
+    -fx-fill: #60a5fa;
+}
+
+.styled-text-area .text.json-key,
+.json-key {
+    -fx-fill: #7dd3fc;
+}
+
+.styled-text-area .text.json-string,
+.json-string {
+    -fx-fill: #86efac;
+}
+
+.styled-text-area .text.json-number,
+.json-number {
+    -fx-fill: #fca5a5;
+}
+
+.styled-text-area .text.json-boolean,
+.json-boolean {
+    -fx-fill: #c084fc;
+    -fx-font-weight: bold;
+}
+
+/* Gutter styling */
+.gutter-box {
+    -fx-background-color: #1d202e;
+    -fx-border-color: #282d3e;
+    -fx-border-width: 0 1 0 0;
+    -fx-padding: 0 6 0 6;
+}
+
+.gutter-line-number {
+    -fx-font-family: "JetBrains Mono", "DejaVu Sans Mono", monospace;
+    -fx-font-size: 11.5px;
+    -fx-text-fill: #525b76;
+}
+
+.gutter-icon-btn {
+    -fx-background-radius: 3;
+    -fx-border-radius: 3;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-padding: 1 2 1 2;
+    -fx-min-width: 14px;
+    -fx-pref-width: 14px;
+    -fx-max-width: 14px;
+    -fx-min-height: 14px;
+    -fx-pref-height: 14px;
+    -fx-max-height: 14px;
+    -fx-cursor: hand;
+}
+
+.gutter-run-btn {
+    -fx-background-color: rgba(16, 185, 129, 0.2);
+    -fx-text-fill: #34d399;
+    -fx-border-color: rgba(52, 211, 153, 0.45);
+}
+
+.gutter-run-btn .gutter-icon {
+    -fx-fill: #34d399;
+}
+
+.gutter-run-btn:hover {
+    -fx-background-color: #10b981;
+    -fx-text-fill: #ffffff;
+}
+
+.gutter-run-btn:hover .gutter-icon {
+    -fx-fill: #ffffff;
+}
+
+.gutter-edit-btn {
+    -fx-background-color: rgba(59, 130, 246, 0.2);
+    -fx-text-fill: #60a5fa;
+    -fx-border-color: rgba(96, 165, 250, 0.45);
+}
+
+.gutter-edit-btn .gutter-icon {
+    -fx-fill: #60a5fa;
+}
+
+.gutter-edit-btn:hover {
+    -fx-background-color: #3b82f6;
+    -fx-text-fill: #ffffff;
+}
+
+.gutter-edit-btn:hover .gutter-icon {
+    -fx-fill: #ffffff;
+}
+
+.gutter-load-btn {
+    -fx-background-color: rgba(245, 158, 11, 0.2);
+    -fx-text-fill: #fbbf24;
+    -fx-border-color: rgba(251, 191, 36, 0.45);
+}
+
+.gutter-load-btn .gutter-icon {
+    -fx-fill: #fbbf24;
+}
+
+.gutter-load-btn:hover {
+    -fx-background-color: #f59e0b;
+    -fx-text-fill: #ffffff;
+}
+
+.gutter-load-btn:hover .gutter-icon {
+    -fx-fill: #ffffff;
+}
+
+/* Status & Timing Badges */
+.badge-success {
+    -fx-background-color: rgba(16, 185, 129, 0.2);
+    -fx-text-fill: #34d399;
+    -fx-border-color: #10b981;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 3 9 3 9;
+    -fx-font-weight: bold;
+}
+
+.badge-redirect {
+    -fx-background-color: rgba(245, 158, 11, 0.2);
+    -fx-text-fill: #fbbf24;
+    -fx-border-color: #f59e0b;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 3 9 3 9;
+    -fx-font-weight: bold;
+}
+
+.badge-error {
+    -fx-background-color: rgba(239, 68, 68, 0.2);
+    -fx-text-fill: #f87171;
+    -fx-border-color: #ef4444;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 3 9 3 9;
+    -fx-font-weight: bold;
+}
+
+.badge-neutral {
+    -fx-background-color: #24293a;
+    -fx-text-fill: #cbd5e1;
+    -fx-border-color: #363e57;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 3 9 3 9;
+    -fx-font-size: 11.5px;
+}
+
+.timing-card {
+    -fx-background-color: #1b1e2b;
+    -fx-border-color: #2c3246;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 8 12 8 12;
+}
+
+.section-header {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #94a3b8;
+}
+
+.sidebar-list {
+    -fx-background-color: #161822;
+    -fx-border-color: #262b3d;
+}
+
+.sidebar-tree {
+    -fx-background-color: #161822;
+    -fx-border-color: #262b3d;
+}
+
+.sidebar-tree .tree-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 4 8 4 6;
+}
+
+.sidebar-tree .tree-cell:filled:hover {
+    -fx-background-color: #222738;
+}
+
+.sidebar-tree .tree-cell:filled:selected {
+    -fx-background-color: #2563eb38;
+    -fx-border-color: #3b82f6;
+    -fx-border-width: 0 0 0 2;
+}
+
+.tree-http-count-badge {
+    -fx-background-color: rgba(245, 158, 11, 0.18);
+    -fx-text-fill: #fbbf24;
+    -fx-border-color: rgba(245, 158, 11, 0.45);
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 1 6 1 6;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+.tree-http-file-badge {
+    -fx-background-color: rgba(56, 189, 248, 0.18);
+    -fx-text-fill: #38bdf8;
+    -fx-border-color: rgba(56, 189, 248, 0.45);
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 1 5 1 5;
+    -fx-font-size: 9.5px;
+    -fx-font-weight: bold;
+    -fx-font-family: monospace;
+}
+
+/* Charts styling for dark theme */
+.chart {
+    -fx-background-color: #1b1e2b;
+    -fx-background-radius: 6;
+    -fx-border-color: #2c3246;
+    -fx-border-radius: 6;
+    -fx-padding: 8;
+}
+
+.chart-plot-background {
+    -fx-background-color: #141722;
+}
+
+.chart-vertical-grid-lines,
+.chart-horizontal-grid-lines {
+    -fx-stroke: #262b3d;
+}
+
+.chart-title {
+    -fx-text-fill: #f8fafc;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.axis-label {
+    -fx-text-fill: #94a3b8;
+}
+
+.chart-legend {
+    -fx-background-color: #161822;
+    -fx-border-color: #2a2f42;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #181a24;
+}
+
+.tab-pane .tab {
+    -fx-background-color: #1f2330;
+    -fx-background-radius: 5 5 0 0;
+    -fx-padding: 5 12 5 12;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #2b3145;
+    -fx-border-color: #3b82f6;
+    -fx-border-width: 0 0 2 0;
+}
